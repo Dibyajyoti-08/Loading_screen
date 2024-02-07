@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #BBE2EC;
+    }
+
+    .loading{
+        text-align: center;
+    }
+
+    .loading_author {  
+        font-weight: bold;  
+        font-size: 2rem; 
+        font-weight: 30px; 
+        color: #FFF6E9;
+        margin: 0.6rem 0 2rem 0;  
+        display: block;
+    }
+
+    .loading_anim{
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border: 5px solid rgba(189,189,189 ,0.25);
+        border-left-color: rgba(3,155,229 ,1);
+        border-top-color: rgba(3,155,229 ,1);
+        border-radius: 50%;
+        animation: rotate 700ms infinite linear;
+    }
+
+    @keyframes rotate { 
+        to {  
+            transform: rotate(1turn) 
+        }
+    }
+
+
+</style>
+<body>
+    <section class="loading">
+        <span class="loading_author">Loading...</span>
+        <span class="loading_anim"></span>
+    </section>  
+</body>
+</html>
+
+
+
